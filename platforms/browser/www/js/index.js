@@ -21,6 +21,13 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+
+        var score = localStorage.getItem('score');
+        if (score) {
+
+            app.setText('label_score', 'Your score is:');
+            app.setText('score', score);
+        }
     },
 
     // Bind Event Listeners
@@ -37,13 +44,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
-        var score = localStorage.getItem('score');
-        if (score) {
-
-            app.setText('label_score', 'Your score is:');
-            app.setText('score', score);
-        }
     },
 
     // Update DOM on a Received Event
@@ -136,7 +136,7 @@ var app = {
 
             var scoreMessage = 'My score on Take my trash is: ' + app.score;
             var options = {
-                method: "feed",
+                method: 'feed',
                 name:'Take my trash Score Post',
                 message:'My Take my trash score',    
                 caption: scoreMessage,
