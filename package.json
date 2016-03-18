@@ -1,12 +1,12 @@
 {
-  "name": "phonegap-template-hello-world",
+  "name": "phonegap-take-my-trash",
   "version": "1.0.0",
-  "description": "> A Hello World template built with PhoneGap",
+  "description": "> Take my trash app built with PhoneGap",
   "repository": {
     "type": "git",
     "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
   },
-  "author": "PhoneGap Team",
+  "author": "Sanyi Team",
   "license": "Apache-2.0.0",
   "keywords": [
     "ecosystem:phonegap",
@@ -15,7 +15,7 @@
     "phonegap:template"
   ],
   "bugs": {
-    "url": "https://github.com/phonegap/phonegap-app-hello-world/issues"
+    "url": "https://github.com/pavelaron/take-my-trash-app/issues"
   },
-  "homepage": "https://github.com/phonegap/phonegap-app-hello-world"
+  "homepage": "https://github.com/pavelaron/take-my-trash-app"
 }

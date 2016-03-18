@@ -27,6 +27,8 @@ var app = {
 
             app.setText('label_score', 'Your score is:');
             app.setText('score', score);
+
+            app.score = score;
         }
     },
 
