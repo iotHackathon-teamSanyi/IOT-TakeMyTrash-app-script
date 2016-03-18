@@ -4,7 +4,7 @@
   "description": "> Take my trash app built with PhoneGap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
+    "url": "https://github.com/pavelaron/take-my-trash-app.git"
   },
   "author": "Sanyi Team",
   "license": "Apache-2.0.0",
