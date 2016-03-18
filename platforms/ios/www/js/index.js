@@ -73,6 +73,9 @@ var app = {
         cordova.plugins.barcodeScanner.scan(
             function(result) {
 
+                //var accessToken = app.userData.accessToken;
+                //var userID = app.userData.userID;
+
                 var request = new XMLHttpRequest();
                 request.open('GET', 'http://sanyiubuntu.westeurope.cloudapp.azure.com/submitqr/' 
                     + result.text, true);
