@@ -128,28 +128,28 @@ footer div:active
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     border: none;
     text-decoration: none;
-    padding-top: 15px;
+    padding-top: 16px;
     outline: none;
 }
 
 .icon-qrcode
 {
-    font-family         : 'fontello';
-    color               : #000;
-    font-style          : normal;
-    font-size           : 4em;
-    text-decoration     : none;
-    speak               : none;
+    font-family: 'fontello';
+    color: #000;
+    font-style: normal;
+    font-size: 4em;
+    text-decoration: none;
+    speak: none;
 }
 
 .icon-footer
 {
-    font-family         : 'fontello';
-    color               : #eee;
-    font-style          : normal;
-    font-size           : 2em;
-    text-decoration     : none;
-    speak               : none;
+    font-family: 'fontello';
+    color: #eee;
+    font-style: normal;
+    font-size: 2em;
+    text-decoration: none;
+    speak: none;
 }
 
 .btn-scan:active
