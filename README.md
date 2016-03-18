@@ -1,6 +1,6 @@
-# Hello World PhoneGap Application [![bitHound Score][bithound-img]][bithound-url]
+# Take my trash Application [![bitHound Score][bithound-img]][bithound-url]
 
-> A Hello World application built with PhoneGap
+> Take my trash application built with PhoneGap
 
 ## Usage
 

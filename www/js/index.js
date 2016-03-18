@@ -136,7 +136,7 @@ var app = {
 
             var scoreMessage = 'My score on Take my trash is: ' + app.score;
             var options = {
-                method: "feed",
+                method: 'feed',
                 name:'Take my trash Score Post',
                 message:'My Take my trash score',    
                 caption: scoreMessage,
