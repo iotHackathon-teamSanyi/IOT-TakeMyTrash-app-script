@@ -1,0 +1,12 @@
+{
+    "libiconv.dylib": 1,
+    "AVFoundation.framework": 1,
+    "CoreVideo.framework": 1,
+    "QuartzCore.framework": 1,
+    "CoreImage.framework": 1,
+    "AudioToolbox.framework": 2,
+    "libsqlite3.dylib": 1,
+    "Social.framework": 1,
+    "Accounts.framework": 1,
+    "Security.framework": 1
+}

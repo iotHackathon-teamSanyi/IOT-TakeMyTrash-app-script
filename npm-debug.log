@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'ios-deploy' ]
+2 info using npm@3.5.2
+3 info using node@v5.1.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData ios-deploy
+8 silly fetchNamedPackageData ios-deploy
+9 silly mapToRegistry name ios-deploy
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/ios-deploy
+13 verbose get https://registry.npmjs.org/ios-deploy not expired, no request
+14 silly install normalizeTree
+15 silly loadCurrentTree Finishing
+16 silly loadIdealTree Starting
+17 silly install loadIdealTree
+18 silly cloneCurrentTree Starting
+19 silly install cloneCurrentTreeToIdealTree
+20 silly cloneCurrentTree Finishing
+21 silly loadShrinkwrap Starting
+22 silly install loadShrinkwrap
+23 silly loadShrinkwrap Finishing
+24 silly loadAllDepsIntoIdealTree Starting
+25 silly install loadAllDepsIntoIdealTree
+26 silly resolveWithNewModule ios-deploy@1.8.5 checking installable status
+27 silly cache add args [ 'ios-deploy', null ]
+28 verbose cache add spec ios-deploy
+29 silly cache add parsed spec Result {
+29 silly cache add   raw: 'ios-deploy',
+29 silly cache add   scope: null,
+29 silly cache add   name: 'ios-deploy',
+29 silly cache add   rawSpec: '',
+29 silly cache add   spec: 'latest',
+29 silly cache add   type: 'tag' }
+30 silly addNamed ios-deploy@latest
+31 verbose addNamed "latest" is being treated as a dist-tag for ios-deploy
+32 info addNameTag [ 'ios-deploy', 'latest' ]
+33 silly mapToRegistry name ios-deploy
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/ios-deploy
+37 verbose addNameTag registry:https://registry.npmjs.org/ios-deploy not in flight; fetching
+38 verbose get https://registry.npmjs.org/ios-deploy not expired, no request
+39 silly addNameTag next cb for ios-deploy with tag latest
+40 silly addNamed ios-deploy@1.8.5
+41 verbose addNamed "1.8.5" is a plain semver version for ios-deploy
+42 silly cache afterAdd ios-deploy@1.8.5
+43 verbose afterAdd /Users/aronpavel/.npm/ios-deploy/1.8.5/package/package.json not in flight; writing
+44 verbose afterAdd /Users/aronpavel/.npm/ios-deploy/1.8.5/package/package.json written
+45 silly loadAllDepsIntoIdealTree Finishing
+46 silly idealTree:prePrune lib
+46 silly idealTree:prePrune └── ios-deploy@1.8.5
+47 silly loadIdealTree Finishing
+48 silly currentTree lib
+49 silly idealTree lib
+49 silly idealTree └── ios-deploy@1.8.5
+50 silly generateActionsToTake Starting
+51 silly install generateActionsToTake
+52 silly generateActionsToTake Finishing
+53 silly diffTrees action count 1
+54 silly diffTrees add ios-deploy@1.8.5
+55 silly decomposeActions action count 8
+56 silly decomposeActions fetch ios-deploy@1.8.5
+57 silly decomposeActions extract ios-deploy@1.8.5
+58 silly decomposeActions test ios-deploy@1.8.5
+59 silly decomposeActions preinstall ios-deploy@1.8.5
+60 silly decomposeActions build ios-deploy@1.8.5
+61 silly decomposeActions install ios-deploy@1.8.5
+62 silly decomposeActions postinstall ios-deploy@1.8.5
+63 silly decomposeActions finalize ios-deploy@1.8.5
+64 silly executeActions Starting
+65 silly install executeActions
+66 silly doSerial global-install 0
+67 silly doParallel fetch 1
+68 verbose lock using /Users/aronpavel/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+69 silly doParallel extract 1
+70 silly extract ios-deploy@1.8.5
+71 verbose unbuild lib/node_modules/.staging/ios-deploy-298c9491
+72 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491 is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+74 verbose tar unpack /Users/aronpavel/.npm/ios-deploy/1.8.5/package.tgz
+75 verbose tar unpacking to /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+76 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491 is being purged
+77 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+78 silly gunzTarPerm modes [ '755', '644' ]
+79 silly gunzTarPerm extractEntry package.json
+80 silly gunzTarPerm extractEntry .npmignore
+81 silly gunzTarPerm extractEntry README.md
+82 silly gunzTarPerm extractEntry LICENSE
+83 silly gunzTarPerm extractEntry CONTRIBUTING.md
+84 silly gunzTarPerm extractEntry demo/.npmignore
+85 silly gunzTarPerm extractEntry demo/Entitlements.plist
+86 silly gunzTarPerm extractEntry demo/Info.plist
+87 silly gunzTarPerm extractEntry demo/Makefile
+88 silly gunzTarPerm extractEntry demo/ResourceRules.plist
+89 silly gunzTarPerm extractEntry demo/demo.c
+90 silly gunzTarPerm extractEntry ios-deploy.xcodeproj/project.pbxproj
+91 silly gunzTarPerm extractEntry ios-deploy.xcodeproj/xcshareddata/xcschemes/ios-deploy-tests.xcscheme
+92 silly gunzTarPerm extractEntry src/ios-deploy/MobileDevice.h
+93 silly gunzTarPerm extractEntry src/ios-deploy/errors.h
+94 silly gunzTarPerm extractEntry src/ios-deploy/ios-deploy.m
+95 silly gunzTarPerm extractEntry src/ios-deploy/lldb.py.h
+96 silly gunzTarPerm extractEntry src/ios-deploy/version.h
+97 silly gunzTarPerm extractEntry src/ios-deploy-lib/libios_deploy.h
+98 silly gunzTarPerm extractEntry src/ios-deploy-lib/libios_deploy.m
+99 silly gunzTarPerm extractEntry src/ios-deploy-tests/Info.plist
+100 silly gunzTarPerm extractEntry src/ios-deploy-tests/ios_deploy_tests.m
+101 silly gunzTarPerm extractEntry src/scripts/check_reqs.js
+102 silly gunzTarPerm extractEntry src/scripts/lldb.py
+103 silly gunzTarPerm extractEntry src/scripts/lldb.pyc
+104 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491/node_modules is being purged
+105 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491/node_modules
+106 silly doParallel preinstall 1
+107 silly preinstall ios-deploy@1.8.5 /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+108 info lifecycle ios-deploy@1.8.5~preinstall: ios-deploy@1.8.5
+109 warn lifecycle ios-deploy@1.8.5~preinstall: cannot run in wd %s %s (wd=%s) ios-deploy@1.8.5 ./src/scripts/check_reqs.js && xcodebuild /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+110 silly doReverseSerial remove 0
+111 silly doSerial move 0
+112 silly doSerial finalize 1
+113 silly finalize /usr/local/lib/node_modules/ios-deploy
+114 silly doSerial build 1
+115 silly build ios-deploy@1.8.5
+116 info linkStuff ios-deploy@1.8.5
+117 silly linkStuff ios-deploy@1.8.5 has /usr/local/lib/node_modules as its parent node_modules
+118 silly linkStuff ios-deploy@1.8.5 is part of a global install
+119 silly linkStuff ios-deploy@1.8.5 is installed into a global node_modules
+120 silly linkStuff ios-deploy@1.8.5 is installed into the top-level global node_modules
+121 verbose linkBins ios-deploy@1.8.5
+122 verbose link bins [ { 'ios-deploy': './build/Release/ios-deploy' },
+122 verbose link bins   '/usr/local/bin',
+122 verbose link bins   true ]
+123 verbose linkMans ios-deploy@1.8.5
+124 verbose unlock done using /Users/aronpavel/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+125 silly rollbackFailedOptional Starting
+126 silly rollbackFailedOptional Finishing
+127 silly runTopLevelLifecycles Starting
+128 silly runTopLevelLifecycles Finishing
+129 silly install printInstalled
+130 verbose stack Error: ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+130 verbose stack     at Error (native)
+131 verbose cwd /Users/aronpavel/Documents/IOT/Sanyi
+132 error Darwin 15.3.0
+133 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "ios-deploy"
+134 error node v5.1.1
+135 error npm  v3.5.2
+136 error path /usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy
+137 error code ENOENT
+138 error errno -2
+139 error syscall chmod
+140 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+141 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+141 error enoent This is most likely not a problem with npm itself
+141 error enoent and is related to npm not being able to find a file.
+142 verbose exit [ -2, true ]
