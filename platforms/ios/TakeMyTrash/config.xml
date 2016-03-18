@@ -49,12 +49,12 @@
     <access origin="https://*.akamaihd.net" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <name>Sanyi</name>
+    <name>TakeMyTrash</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Take my trash sample application that responds to the deviceready event.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+        Sanyi Team
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
