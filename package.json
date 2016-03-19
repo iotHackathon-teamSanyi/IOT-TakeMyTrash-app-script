@@ -1,7 +1,7 @@
 {
   "name": "phonegap-take-my-trash",
   "version": "1.0.0",
-  "description": "> Take my trash app built with PhoneGap",
+  "description": "Take my trash app built with PhoneGap",
   "repository": {
     "type": "git",
     "url": "https://github.com/pavelaron/take-my-trash-app.git"

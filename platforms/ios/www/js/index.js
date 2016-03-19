@@ -126,7 +126,7 @@ var app = {
     },
 
     showInfo: function() {
-        app.alert('Take my trash', '© BLACK SWAN 2016');
+        app.alert('TakeMyTrash', '© BLACK SWAN 2016');
     },
 
     share: function() {
