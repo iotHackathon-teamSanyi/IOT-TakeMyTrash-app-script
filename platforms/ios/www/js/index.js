@@ -25,13 +25,9 @@ var app = {
         var score = localStorage.getItem('score');
         if (score) {
 
-            app.setText('label_score', 'Your score is:');
-            app.setText('score', score);
-
+            app.displayScore(score);
             app.score = score;
         }
-
-        console.log('hello world');
     },
 
     // Bind Event Listeners
@@ -74,12 +70,15 @@ var app = {
         cordova.plugins.barcodeScanner.scan(
             function(result) {
 
-                //var accessToken = app.userData.accessToken;
-                //var userID = app.userData.userID;
-
                 var request = new XMLHttpRequest();
-                request.open('GET', 'http://sanyiubuntu.westeurope.cloudapp.azure.com/submitqr/' 
-                    + [result.text, app.userData.userID, app.userData.accessToken].join('/'), true);
+                var params = [
+                    result.text, 
+                    app.userData.userID, 
+                    app.userData.accessToken
+                ].join('/');
+
+                request.open('GET', 'http://takemytrash.westeurope.cloudapp.azure.com/submitqr/' 
+                    + params, true);
 
                 request.onreadystatechange = function() {
 
@@ -97,8 +96,7 @@ var app = {
                                 app.score = resultObj.points;
                                 localStorage.setItem('score', app.score);
 
-                                app.setText('label_score', 'Your score is:');
-                                app.setText('score', app.score);
+                                app.displayScore(app.score);
                             }
                         }
                         else {
@@ -115,6 +113,12 @@ var app = {
                 app.alert('Scanning failed', error);
             }
         );
+    },
+
+    displayScore: function(score) {
+
+        app.setText('label_score', 'Your score:');
+        app.setText('score', score);
     },
 
     setText: function(id, text) {

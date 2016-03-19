@@ -70,12 +70,15 @@ var app = {
         cordova.plugins.barcodeScanner.scan(
             function(result) {
 
-                //var accessToken = app.userData.accessToken;
-                //var userID = app.userData.userID;
-
                 var request = new XMLHttpRequest();
-                request.open('GET', 'http://sanyiubuntu.westeurope.cloudapp.azure.com/submitqr/' 
-                    + [result.text, app.userData.userID, app.userData.accessToken].join('/'), true);
+                var params = [
+                    result.text, 
+                    app.userData.userID, 
+                    app.userData.accessToken
+                ].join('/');
+
+                request.open('GET', 'http://takemytrash.westeurope.cloudapp.azure.com/submitqr/' 
+                    + params, true);
 
                 request.onreadystatechange = function() {
 
