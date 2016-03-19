@@ -73,8 +73,8 @@ var app = {
                 var request = new XMLHttpRequest();
                 var params = [
                     result.text, 
-                    app.userData.userID, 
-                    app.userData.accessToken
+                    app.userData.authResponse.userID, 
+                    app.userData.authResponse.accessToken
                 ].join('/');
 
                 request.open('GET', 'http://takemytrash.westeurope.cloudapp.azure.com/submitqr/' 
@@ -142,20 +142,20 @@ var app = {
         }
         else {
 
-            var scoreMessage = 'My score on Take my trash is: ' + app.score;
+            var url = 'http://takemytrash.westeurope.cloudapp.azure.com/points/' 
+            + app.userData.authResponse.userID;
+
             var options = {
                 method: 'feed',
-                name: 'Take my trash Score Post',
-                message: 'My Take my trash score',    
-                caption: scoreMessage,
-                description: 'Try to beat that using the Take my trash app!'
+                link: url,
+                caption: 'Download TakeMyTrash now!'
             };
 
             facebookConnectPlugin.showDialog(options, function(result) {
                 app.alert('Success', 'Score posted successfully!');             
             },
             function(error) {
-                app.alert('Error', error);
+                app.alert('Error', error.errorMessage);
             });
         }
     },
@@ -165,8 +165,15 @@ var app = {
         // http://www.phonegaptutorial.com/integrate-facebook-into-your-phonegap-app/
         facebookConnectPlugin.login(["public_profile"],
             function(userData) { 
-                app.userData = userData;
-                callback();
+
+                if (userData.status === 'connected') {
+                    
+                    app.userData = userData;
+                    callback();
+                }
+                else {
+                    app.alert('Error', 'Login failed!');
+                }
             },
             function(error) { 
                 app.alert('Error', 'Login failed!'); 

@@ -61,7 +61,7 @@ body {
 .app #title
 {
     padding: 10px;
-    background-color: #90A4AE;
+    background-color: #a1d66a;
     color: #fff;
 }
 
@@ -91,7 +91,7 @@ footer
     height: 50px;
     bottom: 0;
     position: fixed;
-    background-color: #90A4AE;
+    background-color: #a1d66a;
 }
 
 footer div
@@ -106,7 +106,7 @@ footer div
 
 footer div:active
 {
-    background-color: #70848E; 
+    background-color: #81b64a; 
 }
 
 #btn-info
