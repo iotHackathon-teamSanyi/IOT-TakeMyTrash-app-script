@@ -31,7 +31,7 @@ var app = {
             app.score = score;
         }
 
-        console.log('hello faszom');
+        console.log('hello world');
     },
 
     // Bind Event Listeners
