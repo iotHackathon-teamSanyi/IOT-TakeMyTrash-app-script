@@ -34,6 +34,7 @@
 		0BDF4F77D9864C278A300C88 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FCC25CC86B4888B454BCE9 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9CC0E760FE654A0C98E30922 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8823A86F92AE4C1784EE0601 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8BDCA79872D04516B917E4D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01E68A27732440E9E844533 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AE5D4346D3384D3BAC17032F /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A1935059809D4FF69BAF5ED5 /* CDVLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		73FCC25CC86B4888B454BCE9 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		8823A86F92AE4C1784EE0601 /* Accounts.framework */ = {isa = PBXFileReference; name = "Accounts.framework"; path = "System/Library/Frameworks/Accounts.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		A01E68A27732440E9E844533 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A1935059809D4FF69BAF5ED5 /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A32C7F8344294C7D809A6C42 /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +235,8 @@
 				5660903CBB9E435DAAE186DC /* CDVNotification.h */,
 				4BC12BEE11364BB39D97BCCA /* FacebookConnectPlugin.m */,
 				228F080B48484DB2B6B35FFC /* FacebookConnectPlugin.h */,
+				A1935059809D4FF69BAF5ED5 /* CDVLogger.m */,
+				A32C7F8344294C7D809A6C42 /* CDVLogger.h */,
 			);
 			name = Plugins;
 			path = "TakeMyTrash/Plugins";
@@ -354,6 +359,7 @@
 				51DCB25DAD6C4C639E2E53C4 /* YoikScreenOrientation.m in Sources */,
 				7CC3886C2CC548C2A0D64114 /* CDVNotification.m in Sources */,
 				2E207F36029D4988B84CAEC8 /* FacebookConnectPlugin.m in Sources */,
+				AE5D4346D3384D3BAC17032F /* CDVLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,9 @@
             "APP_ID": "951970631565800",
             "APP_NAME": "Sanyi",
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.blackswan.sanyi"
         }
     },
     "dependent_plugins": {}

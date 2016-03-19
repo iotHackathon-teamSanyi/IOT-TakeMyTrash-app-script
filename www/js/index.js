@@ -30,6 +30,8 @@ var app = {
 
             app.score = score;
         }
+
+        console.log('hello world');
     },
 
     // Bind Event Listeners
@@ -77,7 +79,7 @@ var app = {
 
                 var request = new XMLHttpRequest();
                 request.open('GET', 'http://sanyiubuntu.westeurope.cloudapp.azure.com/submitqr/' 
-                    + result.text, true);
+                    + [result.text, app.userData.userID, app.userData.accessToken].join('/'), true);
 
                 request.onreadystatechange = function() {
 

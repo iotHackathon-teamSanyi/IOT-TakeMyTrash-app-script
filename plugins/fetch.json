@@ -43,5 +43,13 @@
             "APP_ID": "951970631565800",
             "APP_NAME": "Sanyi"
         }
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -55,7 +55,8 @@ module.exports.metadata =
     "phonegap-plugin-barcodescanner": "4.1.0",
     "cordova-plugin-screen-orientation": "1.4.0",
     "cordova-plugin-dialogs": "1.2.1-dev",
-    "phonegap-facebook-plugin": "0.12.0"
+    "phonegap-facebook-plugin": "0.12.0",
+    "cordova-plugin-console": "1.0.2"
 };
 // BOTTOM OF METADATA
 });

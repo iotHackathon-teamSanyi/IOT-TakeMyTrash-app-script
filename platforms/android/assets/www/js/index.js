@@ -30,6 +30,8 @@ var app = {
 
             app.score = score;
         }
+
+        console.log('hello faszom');
     },
 
     // Bind Event Listeners
@@ -56,9 +58,6 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
-        screen.lockOrientation('portrait-primary');
-        console.log('Received Event: ' + id);
     },
 
     scanQR: function() {
@@ -80,7 +79,7 @@ var app = {
 
                 var request = new XMLHttpRequest();
                 request.open('GET', 'http://sanyiubuntu.westeurope.cloudapp.azure.com/submitqr/' 
-                    + result.text, true);
+                    + [result.text, app.userData.userID, app.userData.accessToken].join('/'), true);
 
                 request.onreadystatechange = function() {
 
@@ -142,11 +141,12 @@ var app = {
             var scoreMessage = 'My score on Take my trash is: ' + app.score;
             var options = {
                 method: 'feed',
-                name:'Take my trash Score Post',
-                message:'My Take my trash score',    
+                name: 'Take my trash Score Post',
+                message: 'My Take my trash score',    
                 caption: scoreMessage,
                 description: 'Try to beat that using the Take my trash app!'
-            }
+            };
+
             facebookConnectPlugin.showDialog(options, function(result) {
                 app.alert('Success', 'Score posted successfully!');             
             },
