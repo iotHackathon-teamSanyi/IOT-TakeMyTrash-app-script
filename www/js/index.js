@@ -142,16 +142,13 @@ var app = {
         }
         else {
 
-            var scoreMessage = 'My score on TakeMyTrash is ' + app.score
-            + '! Try to beat that using the TakeMyTrash app!';
-
             var url = 'http://takemytrash.westeurope.cloudapp.azure.com/points/' 
             + app.userData.authResponse.userID;
 
             var options = {
                 method: 'feed',
                 link: url,
-                caption: scoreMessage
+                caption: 'Download TakeMyTrash now!'
             };
 
             facebookConnectPlugin.showDialog(options, function(result) {
