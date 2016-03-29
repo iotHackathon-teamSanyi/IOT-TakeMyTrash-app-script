@@ -1,0 +1,245 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+@font-face 
+{
+  font-family: 'fontello';
+  src:  url('../fonts/fontello.eot');
+  src:  url('../fonts/fontello.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff') format('woff'),
+        url('../fonts/fontello.ttf') format('truetype'),
+        url('../fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal; font-style: normal;
+}
+
+* 
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #EDEDED;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    margin: 20px;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    -o-box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+}
+
+.app #title
+{
+    padding: 10px;
+    background-color: #a1d66a;
+    color: #fff;
+}
+
+.container-score
+{
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.container-score p
+{
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+}
+
+#score
+{
+    font-size: 5em;
+}
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    background-color: #a1d66a;
+}
+
+footer div
+{
+    width: 50px;
+    height: 100%;
+    display: inline;
+    position: absolute;
+    text-align: center;
+    padding-top: 1em;
+}
+
+footer div:active
+{
+    background-color: #81b64a; 
+}
+
+#btn-info
+{
+    left: 0;
+}
+
+#btn-share
+{
+    right: 0;
+}
+
+.btn-scan
+{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -40px;
+    background-color: #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: none;
+    text-decoration: none;
+    padding-top: 16px;
+    outline: none;
+}
+
+.icon-qrcode
+{
+    font-family: 'fontello';
+    color: #000;
+    font-style: normal;
+    font-size: 4em;
+    text-decoration: none;
+    speak: none;
+}
+
+.icon-footer
+{
+    font-family: 'fontello';
+    color: #eee;
+    font-style: normal;
+    font-size: 2em;
+    text-decoration: none;
+    speak: none;
+}
+
+.btn-scan:active
+{
+    background-color: #aaa;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+}
+
+.event {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 0px 30px;
+    padding: 2px 0px;
+}
+
+.event.listening {
+    background-color: #333333;
+    display: block;
+}
+
+.event.received {
+    background-color: #4B946A;
+    display: none;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-family: Trebuchet, Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation: fade 3000ms infinite;
+    -webkit-animation: fade 3000ms infinite;
+}
